@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "8a3b5479-a047-4e49-9c4b-d74057f309f6",
+		"name": "postman01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://4516acd4-2e05-406e-9711-219819698acf.japaneast.azurecontainer.io/score",
+			"_postman_id": "be916a84-b081-40cf-96fc-d6cfed316cee",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Inputs\": {\r\n        \"data\": [\r\n            {\r\n                \"day\": 1,\r\n                \"mnth\": 1,\r\n                \"year\": 2022,\r\n                \"season\": 2,\r\n                \"holiday\": 0,\r\n                        \"weekday\": 1,\r\n\"workingday\": 1,\r\n\"weathersit\": 2,\r\n\"temp\": 0.3,\r\n\"atemp\": 0.3,\r\n\"hum\": 0.3,\r\n\"windspeed\": 0.3\r\n}\r\n]\r\n},\r\n\"GlobalParameters\": 1.0\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": "http://4516acd4-2e05-406e-9711-219819698acf.japaneast.azurecontainer.io/score"
+			},
+			"response": []
+		}
+	]
+}
